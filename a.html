@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat UI</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="icon" type="image/x-icon" href="Thera_Bot.png" />
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <button id="new-chat-btn" class="new-chat-btn">
+          <span class="material-symbols-outlined">add</span>
+          New Chat
+        </button>
+      </div>
+      <div class="chat-list">
+        <!-- Chat history items will be dynamically added here -->
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="top-bar">
+        <span id="hamburger-menu" class="material-symbols-outlined">menu</span>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Thera Bot
+            <span class="material-symbols-outlined">arrow_drop_down</span>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Model 1</a>
+            <a href="#">Model 2</a>
+            <a href="#">Model 3</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-container"></div>
+
+      <div class="typing-container">
+        <div class="typing-content">
+          <div class="typing-textarea">
+            <textarea
+              id="chat-input"
+              placeholder="What's on your mind?"
+            ></textarea>
+            <span id="send-btn" class="material-symbols-outlined send-button"
+              >send</span
+            >
+          </div>
+          <div class="typing-controls">
+            <span id="theme-btn" class="material-symbols-outlined"
+              >light_mode</span
+            >
+            <span id="delete-btn" class="material-symbols-outlined"
+              >delete</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
