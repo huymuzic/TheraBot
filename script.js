@@ -7,8 +7,7 @@ const newChatButton = document.querySelector("#new-chat-btn");
 const chatList = document.querySelector(".chat-list");
 
 let userText = null;
-const API_URL =
-  "https://e2a524bd-91fd-448f-b7c8-0c8808da1b18-00-2sk2iczgs9yn4.riker.replit.dev/api/chat";
+const API_URL = "https://api.smollhuy.workers.dev/api/chat";
 const initialHeight = chatInput.scrollHeight;
 
 let chatHistories = [];

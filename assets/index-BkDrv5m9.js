@@ -18898,7 +18898,7 @@ function KE() {
           O.jsx("div", {
             className: "header__menu-item",
             children: O.jsx("a", {
-              href: "/TheraBot/a.html",
+              href: "/TheraBot/chat.html",
               children: "Chat",
             }),
           }),
